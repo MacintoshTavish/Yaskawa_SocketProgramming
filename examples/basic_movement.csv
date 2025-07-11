@@ -1,0 +1,4 @@
+timestamp,command_type,topic,parameters,duration,priority,description
+0.0,move,/cmd_vel,"{""linear_x"": 1.0, ""angular_z"": 0.0}",2.0,1,Move forward
+2.0,rotate,/cmd_vel,"{""linear_x"": 0.0, ""angular_z"": 0.5}",1.5,1,Turn right
+3.5,stop,/cmd_vel,"{""linear_x"": 0.0, ""angular_z"": 0.0}",0.1,2,Stop robot

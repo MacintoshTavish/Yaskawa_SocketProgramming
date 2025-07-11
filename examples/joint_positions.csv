@@ -1,0 +1,5 @@
+timestamp,command_type,topic,parameters,duration,priority,description
+0.0,joint_position,/arm_controller/command,"{""joint_names"": [""joint_1"", ""joint_2"", ""joint_3"", ""joint_4"", ""joint_5"", ""joint_6""], ""positions"": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}",2.0,1,Home position
+2.0,joint_position,/arm_controller/command,"{""joint_names"": [""joint_1"", ""joint_2"", ""joint_3"", ""joint_4"", ""joint_5"", ""joint_6""], ""positions"": [0.5, 0.1, 0.2, 0.3, 0.0, 0.0]}",2.0,1,Move to pose 1
+4.0,joint_position,/arm_controller/command,"{""joint_names"": [""joint_1"", ""joint_2"", ""joint_3"", ""joint_4"", ""joint_5"", ""joint_6""], ""positions"": [0.5, 0.1, 0.2, 0.3, 0.2, 0.1]}",2.0,1,Move to pose 2
+6.0,joint_position,/arm_controller/command,"{""joint_names"": [""joint_1"", ""joint_2"", ""joint_3"", ""joint_4"", ""joint_5"", ""joint_6""], ""positions"": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}",2.0,1,Return to home

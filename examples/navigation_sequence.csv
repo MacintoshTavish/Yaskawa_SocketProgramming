@@ -1,0 +1,4 @@
+timestamp,command_type,topic,parameters,duration,priority,description
+0.0,set_goal,/move_base_simple/goal,"{\"x\": 5.0, \"y\": 3.0, \"yaw\": 1.57}",0.0,1,Navigate to position
+5.0,set_goal,/move_base_simple/goal,"{\"x\": 10.0, \"y\": 0.0, \"yaw\": 0.0}",0.0,1,Move to next goal
+10.0,set_goal,/move_base_simple/goal,"{\"x\": 0.0, \"y\": 0.0, \"yaw\": -1.57}",0.0,1,Return to start 

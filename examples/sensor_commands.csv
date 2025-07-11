@@ -1,0 +1,4 @@
+timestamp,command_type,topic,parameters,duration,priority,description
+0.0,laser_scan,/scan,"{\"ranges\": [1.0, 2.0, 3.0], \"angle_min\": -1.57, \"angle_max\": 1.57, \"angle_increment\": 0.01, \"time_increment\": 0.0, \"scan_time\": 0.1, \"range_min\": 0.2, \"range_max\": 10.0}",0.0,1,Send LIDAR scan
+1.0,odometry,/odom,"{\"pose\": {\"position\": {\"x\": 1, \"y\": 2, \"z\": 0}, \"orientation\": {\"x\": 0, \"y\": 0, \"z\": 0, \"w\": 1}}, \"twist\": {\"linear\": {\"x\": 1, \"y\": 0, \"z\": 0}, \"angular\": {\"x\": 0, \"y\": 0, \"z\": 0.5}}}",0.0,1,Send odometry
+2.0,publish_string,/robot_status,"{\"data\": \"Robot operational\"}",0.0,1,Publish status 
