@@ -1,0 +1,14 @@
+<!-- ADD THESE LINES TO YOUR AndroidManifest.xml -->
+
+<!-- Inside <application> tag, add these activities: -->
+
+<activity android:name=".MainActivity"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+
+<activity android:name=".Page2Activity" />
+<activity android:name=".Page3Activity" />
