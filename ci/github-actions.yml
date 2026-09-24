@@ -1,0 +1,27 @@
+name: Playback checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  python:
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.13']
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: playback
+      - uses: actions/checkout@v4
+        with:
+          repository: MacintoshTavish/Yaskawa_json_to_ros
+          path: broker
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install ./broker ./playback
+      - run: python -m unittest discover -s tests -v
+        working-directory: playback
+      - run: yaskawa-demo
+        working-directory: playback
